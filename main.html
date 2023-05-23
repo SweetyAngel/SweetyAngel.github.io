@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title> Альберт </title>
+  </head>
+<body>
+  <div id="number">
+  </div>
+  <a href="index.html">Обратно</a>
+  <script>
+    var count = 0;
+    function UpdateCount() {
+      count = count + 1;
+      document.getElementById("number").innerHTML = count;
+      setTimeout(UpdateCount, 1000);
+    }
+    UpdateCount();
+  </script>
+  </body>
+</html>
