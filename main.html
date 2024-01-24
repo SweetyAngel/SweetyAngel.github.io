@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  <title> Альберт </title>
-  </head>
+<head>
+  <title>Альберт</title>
+</head>
 <body>
-  <div id="number">
-  </div>
-  <p title="It,s title!">TEST</p>
+  <div id="number"></div>
+  <p title="It's title!">TEST</p>
   
   <a href="index.html">Обратно</a>
-<img src="cat.jpeg" alt="Cat"/>
+  <img src="cat.jpeg" alt="Cat"/>
+
   <script>
     var count = 0;
-    function UpdateCount() {
+    function updateCount() {
       count = count + 1;
       document.getElementById("number").innerHTML = count;
-      setTimeout(UpdateCount, 1000);
+      setTimeout(updateCount, 1000);
     }
-    UpdateCount();
+    updateCount();
   </script>
-  </body>
+</body>
 </html>
